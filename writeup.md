@@ -53,6 +53,15 @@ We find the slope and length of the hypotenous of the line. The slope determines
 upLeftPoint = seg_intersect(upLinePoint1,upLinePoint2, p3,p4)
 downLeftPoint = seg_intersect(downLinePoint1,downLinePoint2, p3,p4)
 ```
+We then find out the average position of the left and right line over multiple image frames and draw lines
+
+```
+x1 = int(avgx1)
+y1 = int(avgy1)
+x2 = int(avgx2)
+y2 = int(avgy2)
+cv2.line(img, (x1, y1), (x2, y2), [255,255,255], 12)
+ ```
 
 ###2. Identify potential shortcomings with your current pipeline
 
