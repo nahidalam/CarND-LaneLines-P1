@@ -14,9 +14,11 @@ The goal of the project is to create an image processing pipeline to identify la
 The pipeline consisted of 4 steps. 
 First, we blur the image with gaussian_blur
 Then we apply Canny edge detection to detect the sharp changes of colors in the blurred image. We tune the low and high threshold parameters of canny
-```low_threshold = 200
-   high_threshold = 300
-   edges = canny(blur_gray, low_threshold, high_threshold)
+```
+low_threshold = 200
+high_threshold = 300
+edges = canny(blur_gray, low_threshold, high_threshold)
+
 ```    
 
 
