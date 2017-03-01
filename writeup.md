@@ -63,15 +63,14 @@ y2 = int(avgy2)
 cv2.line(img, (x1, y1), (x2, y2), [255,255,255], 12)
  ```
 
-###2. Identify potential shortcomings with your current pipeline
+###2. Potential shortcomings
+
+The main shortcoming is that the accuracy of detecting the exact lane lines are less than 100%. We tuned some parameters provided in the sample code but the interraltion of those parameter was not really clear to me. 
+
+Another shortcoming is the way we improved the draw_line() function. We are averaging out the intersection of left and right lines with an imaginary line in the center and the bottom of the image. This simple averaging technique also leads to less than 100% accuracy in lane detection specially in the video. This technique will be specially problematic in detecting lanes in hilly and curvy roads. 
 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
-
-###3. Suggest possible improvements to your pipeline
+###3. Possible improvements
 
 A possible improvement would be to ...
 
