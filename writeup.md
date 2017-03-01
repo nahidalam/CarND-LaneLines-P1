@@ -8,9 +8,7 @@
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+The goal of the project is to create an image processing pipeline to identify lane lines on a road. To start with , we will identify white and yellow lane lines in a series of image. Then we will expand it to identify lane lines in a video (a collection of images). We will then reflect on the work on a short writeup.
 
 
 [//]: # (Image References)
@@ -21,9 +19,10 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. Description of the pipeline. 
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+The pipeline consisted of 4 steps. 
+First, we blur the image with gaussian_blur
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
