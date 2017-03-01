@@ -9,18 +9,17 @@ The goal of the project is to create an image processing pipeline to identify la
 
 ---
 
-### Reflection
-
 ###1. Description of the pipeline. 
 
 The pipeline consisted of 4 steps. 
 First, we blur the image with gaussian_blur
+Then we apply Canny edge detection to detect the sharp changes of colors in the blurred image. We tune the low and high threshold parameters of canny
+```low_threshold = 200
+   high_threshold = 300
+   edges = canny(blur_gray, low_threshold, high_threshold)
+```    
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 
 ###2. Identify potential shortcomings with your current pipeline
