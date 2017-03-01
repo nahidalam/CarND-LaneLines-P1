@@ -32,17 +32,17 @@ masked_edges = region_of_interest(edges, vertices)
 Then we apply the hough line detection logic. We tune the parameters for hough line detection
 
 ```
-    rho = 3
-    theta = np.pi/180
-    threshold = 40
-    min_line_length = 30
-    max_line_gap = 200
+rho = 3
+theta = np.pi/180
+threshold = 40
+min_line_length = 30
+max_line_gap = 200
 ```
 Then we draw lines on the lane lines of the original image
 
 ```
-    result = weighted_img(line_img, image)
-    fig = plt.figure(figsize=(6,10))
+result = weighted_img(line_img, image)
+fig = plt.figure(figsize=(6,10))
 ```
 
 
