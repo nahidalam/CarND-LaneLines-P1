@@ -45,7 +45,14 @@ result = weighted_img(line_img, image)
 fig = plt.figure(figsize=(6,10))
 ```
 
+##Updating the draw_line() function
 
+We find the slope and length of the hypotenous of the line. The slope determines whether we are operating on the left or right line of the lane. We draw an imaginary line in the bottom and the center of the image and find the intersection of our left and right lines with those imaginary lines.
+
+```
+upLeftPoint = seg_intersect(upLinePoint1,upLinePoint2, p3,p4)
+downLeftPoint = seg_intersect(downLinePoint1,downLinePoint2, p3,p4)
+```
 
 ###2. Identify potential shortcomings with your current pipeline
 
