@@ -72,6 +72,4 @@ Another shortcoming is the way we improved the draw_line() function. We are aver
 
 ###3. Possible improvements
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+One improvement would be to find out a better way of improving the draw_line() function rather than simply averaging out the intersections.
